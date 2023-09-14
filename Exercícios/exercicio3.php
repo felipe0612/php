@@ -106,7 +106,7 @@ echo " | Números negativos. <br>";
 
     <!-- 2° exemplo de Textos php -->
 
-    <h2>Textos em php</h2>
+    <h1>Textos em php</h1>
 
     <?php
 
