@@ -73,6 +73,19 @@
     <!-- Criar aqui seu programa PHP -->
     
     
+    <?php
+    $a=5;
+
+    if ($a > 1) {
+    echo "A variável é maior que 1. <br>";
+    }
+
+    if ($a > 1) 
+    echo "A variável é maior que 1.";
+    
+  
+    ?>
+    
     <hr>
     
     <!-- ___________________________________________________________________ -->
@@ -88,7 +101,7 @@
     </ul>
     
     <br>
-    <h4>&nbsp;if ( comparação ) {</h4>
+    <h4>&nbsp;if ( comparação ) </h4>
     <h4>&emsp;comando para comparação verdadeira</h4>
     <h4>&emsp;Se necessário aninhar, usar if simples ou composto</h4>
     <h4>&nbsp;else {</h4>
@@ -122,6 +135,22 @@
 
     <!-- Criar aqui seu programa PHP -->
 
+<?php
+    $produto = 'Ultrabook_ASUS';
+        $estoque_atual = 0;
+        $estoque_min = 14;
+
+        echo "<h3>$produto</h3>";
+
+        if ($estoque_atual < $estoque_min) {
+            echo "<span class=repor>É necessário comprar.</span>";
+            echo "<br>";
+          
+        } else {
+            echo "<span class=ok>Estoque OK!</span>";
+        }
+
+?>
     
     <hr>
 
@@ -168,8 +197,31 @@
     <hr>
     
     <!-- Criar aqui seu programa PHP -->
+    <?php
+
+    // Lista de opções 
+    // 1- Pastel 
+    // 2- Pizza
+    // 3-Esfirra
+    // x- Opção inválida
     
-    <hr>
+    // Criar variavel
+    $opção = 1;
+
+    // Criar a comparação composta
+    if(opção == 1) {
+        $opçãoEscolhida = "Pastel";
+    } elseif (opção == 1) {
+        $opçãoEscolhida = "Pizza";
+    } elseif (opção == 1) {
+        $opçãoEscolhida = "Esfirra";
+    } else  {
+        $opçãoEscolhida = "Opção Inválida";
+    } 
+
+    echo "<p>$opçãoEscolhida</p>";
+    ?>
+       <hr>
 
     <!-- ___________________________________________________________________ -->
     <div class="alert alert-light" role="alert" id="composta">
